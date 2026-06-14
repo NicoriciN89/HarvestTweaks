@@ -18,7 +18,7 @@ namespace FasterHarvesting {
         internal static void Load() {
             try {
                 var asm = Assembly.GetExecutingAssembly();
-                using Stream stream = asm.GetManifestResourceStream("HarvestTweaks.localization.json");
+                using Stream stream = asm.GetManifestResourceStream("FasterHarvesting.localization.json");
                 if (stream == null) {
                     MelonLogger.Warning("[FasterHarvesting] localization.json not found in embedded resources.");
                     return;
